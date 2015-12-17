@@ -1,0 +1,24 @@
+
+				<div class="col-sm-3" style="background-color: white;float: right !important; " ng-controller = "extraCtrl">
+					<div class="left-sidebar">
+						<div class="brands_products">
+							<h2>Chat</h2>
+							<div class="brands-name">
+								<ul class="nav nav-pills nav-stacked">
+									<li ng-repeat = "list in global.peopleListBackUp">
+										 <div ng-click = "global.register_pop(list.id, list.name)">
+											<span class="pull-right"><button ng-class="{'online': list.online}" ng-hide = "!list.online"></button></span>{{list.name}}
+										 </div>
+									</li>
+									
+								</ul>
+							</div>
+						</div><!--/brands_products-->
+						
+						
+					
+					</div>
+				</div>
+				
+				
+			
